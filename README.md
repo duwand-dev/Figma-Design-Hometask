@@ -38,4 +38,4 @@ The Application Runs on **localhost:3000**
 
 **Tracking Icon positions according to Curve in SVG when the user clicks Read more / Read less** :
 
-This was the most challenging thing because there was no supported libraries or functions to track the curve. I drew it into canvas element and got the image data. Then I calculated the position.
+This was the most challenging thing because there was no supported libraries or functions to track the curve. Drew it into canvas element and got the image data. Then calculated the position.

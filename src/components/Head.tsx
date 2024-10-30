@@ -1,32 +1,24 @@
 import React, { useState } from "react";
 
-import Logo from "./logo.png";
-import SearchIcon from "./search.png";
-import OptionIcon from "./option.png";
+import Logo from "./images/logo.png";
+import SearchIcon from "./images/search.png";
+import LocaleSelector from "./LocaleSelector";
 
 const Head = () => {
-  const [isVisible, setVisible] = useState(false);
-  const [locale, setLocale] = useState("EN");
-
   return (
     <div className="h-[38px] flex justify-between">
-      <div className="flex items-center"><img className="size-[35px]" src={Logo} /><div className="flex items-start font-['Libre Franklin'] font-bold text-[38px] tracking-normal dark:text-[#eff1f2] ">&nbsp;concepts</div></div>
       <div className="flex items-center">
-        <div className="w-[41px] h-[19px] mr-5 flex items-center justify-center">
-          <div>
-            <div className="relative font-bold font-['Libre Franklin'] text-[#1D2022] dark:text-[#eff1f2] text-[16px] mr-[6px]">{locale}
-              <div className={`absolute bottom-0 left-0 ${isVisible ? 'visible' : 'collapse'} bg-[#c2c2c2] bottom-[-200%] w-12 -left-2 pl-2 rounded font-bold text-[#1D2022] text-[16px] mr-[6px] cursor-pointer`} onClick={() => setVisible(!isVisible)}>
-                <div onClick={() => setLocale("EN")}>EN</div>
-                <div onClick={() => setLocale("US")}>US</div>
-              </div></div>
-          </div>
-          <img className="cursor-pointer pt-1" src={OptionIcon} onClick={() => setVisible(!isVisible)} />
-        </div>
+        <img className="size-[35px]" src={Logo} alt="logo" />
+        <div className="flex items-start font-frank font-bold text-[38px] tracking-normal dark:text-[#eff1f2] ">&nbsp;concepts</div>
+      </div>
+
+      <div className="flex items-center">
+        <LocaleSelector />
         <div className="w-px h-[19px] bg-[#afafaf] mr-5"></div>
         <div className="w-19 h-[19px] text-[#5f5f5f] mr-5 text-[16px] flex items-center">Download</div>
         <div className="w-[43px] h-[19px] text-[#5f5f5f] mr-5 text-[16px] flex items-center">Learn</div>
         <div className="w-px h-[19px] bg-[#afafaf] mr-5"></div>
-        <img className="w-[14.33px] h-[15.62px] col-[#1D2022]" src={SearchIcon} />
+        <img className="w-[14.33px] h-[15.62px] col-[#1D2022]" alt="search" src={SearchIcon} />
       </div>
     </div>
   )

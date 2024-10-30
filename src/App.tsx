@@ -16,10 +16,10 @@ function App() {
   }, [isDarkMode])
 
   return (
-    <div className='size-full flex flex-col items-center font-sans  tracking-[0.4px]'>
+    <div className='size-full flex flex-col items-center font-sans tracking-[0.4px]'>
 
-      <label className="switch">
-        <input type="checkbox" onChange={() => setIsDarkMode(!isDarkMode)} />
+      <label className="relative inline-block w-[60px] h-[34px]">
+        <input className='invisible' type="checkbox" onChange={() => setIsDarkMode(!isDarkMode)} />
         <span className="slider round"></span>
       </label>
 

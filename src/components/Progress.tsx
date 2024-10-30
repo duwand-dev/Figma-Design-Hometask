@@ -17,8 +17,8 @@ const Progress = () => {
       </div>
 
       <div className="w-[653px] pl-[30px]">
-        <div className="font-bold text-[20px] h-[24px] leading-[24.2px]">Work in Progress</div>
-        <div className="flex h-[34px] items-center w-full bg-[#f2f2f2] rounded mt-5">
+        <div className="font-bold text-[20px] h-[24px] leading-[24.2px] dark:text-[#eff1f2] ">Work in Progress</div>
+        <div className="flex h-[34px] items-center w-full bg-[#f2f2f2] dark:bg-[#0f0f0f] rounded mt-5">
           <div className="w-1 h-[34px] bg-[#9F7BEA] rounded-l"></div>
           <div className="text-[16px] h-[34px] leading-[19.36px] text-[#9F7BEA] pl-2.5 flex items-center">SPOILER ALERT!</div>
         </div>
@@ -39,27 +39,27 @@ const Progress = () => {
 
         <div className="w-full h-[38px]  text-[#43b2ee] mt-5 leading-[19.36px]">
           <ul className="list-disc ml-[30px]">
-            <li>How we make our product decisions</li>
-            <li>Feature requests & bug reports</li>
+            <li className="cursor-pointer">How we make our product decisions</li>
+            <li className="cursor-pointer">Feature requests & bug reports</li>
           </ul>
         </div>
 
         <div className="h-[19px]  text-[#afafaf] text-[16px] mt-5 leading-[19.36px]">Read Less</div>
 
         {/* Brand New */}
-        <div className="font-bold text-[20px] h-[24px] leading-[24.2px] mt-5">Brand New</div>
+        <div className="font-bold text-[20px] h-[24px] leading-[24.2px] mt-5 dark:text-[#eff1f2] ">Brand New</div>
 
         <div className="h-24 gap-y-2 flex flex-col">
-          <div className="h-[22px]  text-[#43b2ee] text-bold text-[18px] mt-5 leading-[21.78px]">2022.04</div>
+          <div className="h-[22px]  text-[#43b2ee] cursor-pointer text-bold text-[18px] mt-5 leading-[21.78px]">2022.04</div>
           <div className="h-[19px]  text-[#5f5f5f] text-[16px] leading-[19.36px]">Advanced Transforms, Interests...</div>
           <div className="h-[19px]  text-[#afafaf] text-[16px] leading-[19.36px]">Read More</div>
         </div>
 
         {/* Past Releases*/}
-        <div className="font-bold text-[20px] h-[24px] leading-[24.2px] mt-5">Past Releases</div>
+        <div className="font-bold text-[20px] h-[24px] leading-[24.2px] mt-5 ">Past Releases</div>
 
         <div className="h-[225px] gap-y-2 flex flex-col mt-5">
-          <div className="h-[22px]  text-[#43b2ee] text-bold text-[18px] leading-[21.78px]">2022.2</div>
+          <div className="h-[22px]  text-[#43b2ee] cursor-pointer text-bold text-[18px] leading-[21.78px]">2022.2</div>
           <div className="h-[19px]  text-[#5f5f5f] text-[16px] leading-[19.36px]">Something to do with Grids?</div>
 
           <ul className="list-disc h-[95px] leading-[19.36px] text-[16px] ml-[30px] tracking-[0.46px] text-[#5f5f5f]">
@@ -68,14 +68,14 @@ const Progress = () => {
           </ul>
 
           <div className="h-[19px]  text-[#5f5f5f] text-[16px] leading-[19.36px]">
-            <span>For a deeper explanation, including pics + video examples, check out the full </span><span className="text-[#43b2ee]">release post.</span><div className="h-[19px]  text-[#5f5f5f] text-[16px] leading-[19.36px] mt-2">Submit your <span className="text-[#43b2ee]">feedback and feature requests</span> here.</div>
+            <span>For a deeper explanation, including pics + video examples, check out the full </span><span className="text-[#43b2ee] cursor-pointer">release post.</span><div className="h-[19px]  text-[#5f5f5f] text-[16px] leading-[19.36px] mt-2">Submit your <span className="text-[#43b2ee] cursor-pointer">feedback and feature requests</span> here.</div>
           </div>
 
           <div></div>
         </div>
 
         <div className="h-24 gap-y-2 flex flex-col mt-5">
-          <div className="h-[22px]  text-[#43b2ee] text-bold text-[18px] leading-[21.78px]">2021.12</div>
+          <div className="h-[22px]  text-[#43b2ee] cursor-pointer text-bold text-[18px] leading-[21.78px]">2021.12</div>
           <div className="h-[19px]  text-[#5f5f5f] text-[16px] leading-[19.36px]">Headline for the things we made way back here.</div>
           <div className="h-[19px]  text-[#afafaf] text-[16px] leading-[19.36px]">Read More</div>
         </div>

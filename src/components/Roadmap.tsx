@@ -5,18 +5,22 @@ import OptionIcon from "./option.png"
 
 const Roadmap = () => {
   const [isVisible, setVisible] = useState(false);
+  const [system, setSystem] = useState("Android");
 
   return (
     <div className="h-[129px] flex flex-col mt-[30px]">
-      <div className="flex items-center h-[34px]  text-[#202020] text-[28px]">Roadmap</div>
+      <div className="flex items-center h-[34px]  text-[#202020] dark:text-[#eff1f2] text-[28px]">Roadmap</div>
 
-      <div className="h-[38px]  text-[#5f5f5f] text-[16px] mt-[15px] leading-[19.36px]">What we’re working on, and what we’ve accomplished in one tidy list. See the <span className="text-[#43b2ee]">Features</span> list for a full platform comparison.</div>
+      <div className="h-[38px]  text-[#5f5f5f] text-[16px] mt-[15px] leading-[19.36px]">What we’re working on, and what we’ve accomplished in one tidy list. See the <span className="text-[#43b2ee] cursor-pointer">Features</span> list for a full platform comparison.</div>
 
-      <div className="flex items-center justify-between w-[123px] h-[27px]  text-[#202020] text-[28px] mt-[15px]">
+      <div className="flex items-center justify-between w-[123px] h-[27px]  text-[#202020] dark:text-[#eff1f2] text-[28px] mt-[15px]">
         <img className="size-4" src={AndroidIcon} />
-        <div className="flex w-[101px] h-[27px] pt-1 pr-2 pb-1 pl-2 bg-[#f2f2f2] items-center rounded">
-          <div className="text-[#1D2022] text-[16px] font-bold pr-[10px] relative">Android
-            <div className={`w-[101px] text-[#1D2022] text-[16px] font-bold pr-[10px] absolute pl-2 left-[-8px] bottom-[-100%] ${isVisible ? 'visible' : 'hidden'} cursor-pointer bg-[#c2c2c2] rounded`} onClick={() => setVisible(!isVisible)} >Android</div>
+        <div className="flex w-[101px] h-[27px] pt-1 pr-2 pb-1 pl-2 bg-[#f2f2f2] dark:bg-[#0f0f0f] dark:text-[#eff1f2] items-center rounded justify-between">
+          <div className="text-[#1D2022] dark:text-[#eff1f2] text-[16px] font-bold pr-[10px] relative"><div>{system}</div>
+            <div className={`w-[101px] text-[#1D2022] dark:text-[#eff1f2] text-[16px] font-bold pr-[10px] absolute pl-2 left-[-8px] bottom-[-200%] ${isVisible ? 'visible' : 'hidden'} cursor-pointer bg-[#c2c2c2] rounded`} onClick={() => setVisible(!isVisible)} >
+              <div onClick={() => setSystem("Android")}>Android</div>
+              <div onClick={() => setSystem("IOS")}>IOS</div>
+            </div>
           </div>
           <img className="cursor-pointer" src={OptionIcon} onClick={() => setVisible(!isVisible)} />
         </div>

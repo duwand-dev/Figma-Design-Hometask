@@ -9,17 +9,16 @@ const Head = () => {
 
   return (
     <div className="h-[38px] flex justify-between">
-      <div className="flex items-center"><img className="size-[35px]" src={Logo} /><div className="font-bold text-3xl">&nbsp;Concepts</div></div>
+      <div className="flex items-center"><img className="size-[35px]" src={Logo} /><div className="flex items-start font-['Libre Franklin'] font-bold text-[38px] tracking-normal">&nbsp;concepts</div></div>
       <div className="flex items-center">
         <div className="w-[41px] h-[19px] mr-5 flex items-center justify-center">
           <div>
-            <div className="font-bold font-['Libre Franklin'] text-[#1D2022] text-[16px] mr-[6px]">EN</div>
-            {/* 
-            <div className={`relative bottom-0 left-0 ${isVisible ? 'visible' : 'collapse'}`}>
-              <div className="font-bold text-[#1D2022] font-[16px] mr-[6px] border-solid border border-[#5f5f5f]" onClick={() => setVisible(!isVisible)}>EN</div>
-            </div> */}
+            <div className="relative font-bold font-['Libre Franklin'] text-[#1D2022] dark:text-yellow-200 text-[16px] mr-[6px]">EN
+              <div className={`absolute bottom-0 left-0 ${isVisible ? 'visible' : 'collapse'} bg-[#c2c2c2] bottom-[-100%] w-12 -left-2 pl-2 rounded font-bold text-[#1D2022] text-[16px] mr-[6px] cursor-pointer`} onClick={() => setVisible(!isVisible)}>
+                EN
+              </div></div>
           </div>
-          <img className="w-[12px] h-[7px]" src={OptionIcon} onClick={() => setVisible(!isVisible)} />
+          <img className="cursor-pointer pt-1" src={OptionIcon} onClick={() => setVisible(!isVisible)} />
         </div>
         <div className="w-px h-[19px] bg-[#afafaf] mr-5"></div>
         <div className="w-19 h-[19px] text-[#5f5f5f] mr-5 text-[16px] flex items-center">Download</div>

@@ -1,4 +1,4 @@
-# Simple Calendar Project
+# Simple Figma Design Project
 
 ## What is this project
 

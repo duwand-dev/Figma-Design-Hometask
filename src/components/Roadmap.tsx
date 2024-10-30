@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 
-import AndroidIcon from "./images/android.png"
-import OptionIcon from "./images/option.png"
 import SystemSelector from "./SystemSelector";
 
 const Roadmap = () => {
-  const [isVisible, setVisible] = useState(false);
-  const [system, setSystem] = useState("Android");
-
   return (
     <div className="h-[129px] flex flex-col mt-[30px]">
       <div className="flex items-center h-[34px] text-[#202020] dark:text-[#eff1f2] text-[28px]">Roadmap</div>
